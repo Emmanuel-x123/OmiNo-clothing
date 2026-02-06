@@ -1,0 +1,32 @@
+.authentication-container {
+  display: flex;
+  gap: 3rem; 
+  max-width: 900px; 
+  width: 100%;
+  padding: 2rem 1.5rem; 
+  justify-content: space-between;
+  margin: 40px auto;
+
+  /* Smooth responsive behavior */
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .authentication-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    max-width: 600px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .authentication-container {
+    padding: 1.5rem 1rem;
+    gap: 2rem;
+    max-width: 100%;
+  }
+}
