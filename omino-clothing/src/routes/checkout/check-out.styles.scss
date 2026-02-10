@@ -1,0 +1,133 @@
+.checkout-container {
+  width: 60%;
+  max-width: 900px;
+
+  min-height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 60px auto;
+
+  padding: 30px 25px;
+
+  background: #ffffff;
+
+  border-radius: 10px;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  .checkout-header {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 1fr 1fr 0.6fr;
+
+    padding: 12px 0;
+
+    border-bottom: 2px solid #f0f0f0;
+
+    margin-bottom: 10px;
+
+    background: #fafafa;
+
+    border-radius: 6px;
+
+    .header-block {
+      font-size: 13px;
+      font-weight: 600;
+
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+
+      color: #555;
+
+      text-align: center;
+
+      &:first-child {
+        text-align: left;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .total {
+    margin-top: 40px;
+
+    align-self: flex-end;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #111;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eee;
+
+    width: 100%;
+
+    text-align: right;
+  }
+}
+
+/* ============================= */
+/* ===== TABLET (≤ 900px) ===== */
+/* ============================= */
+
+@media screen and (max-width: 900px) {
+  .checkout-container {
+    width: 90%;
+
+    margin: 40px auto;
+
+    padding: 25px 20px;
+
+    .checkout-header {
+      grid-template-columns: 1fr 2fr 1fr 1fr 0.5fr;
+
+      .header-block {
+        font-size: 12px;
+      }
+    }
+
+    .total {
+      font-size: 24px;
+    }
+  }
+}
+
+/* ============================= */
+/* ===== MOBILE (≤ 600px) ===== */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+  .checkout-container {
+    width: 95%;
+
+    margin: 25px auto;
+
+    padding: 20px 15px;
+
+    box-shadow: none;
+
+    border-radius: 6px;
+
+    /* Hide table header on mobile */
+    .checkout-header {
+      display: none;
+    }
+
+    .total {
+      font-size: 22px;
+
+      text-align: center;
+
+      margin-top: 25px;
+
+      padding-top: 15px;
+    }
+  }
+}
