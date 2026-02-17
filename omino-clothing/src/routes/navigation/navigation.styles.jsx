@@ -1,107 +1,89 @@
 import { Link } from "react-router-dom";
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const NavigationContainer = styled.div`
-   height: 70px;
+  height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   margin-bottom: 25px;
-`
+  padding: 0 10px;
+
+  /* Tablet */
+  @media (max-width: 768px) {
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  /* Small phones */
+  @media (max-width: 480px) {
+    height: 55px;
+    margin-bottom: 10px;
+  }
+`;
 
 export const LogoContainer = styled(Link)`
-      display: flex;
-     align-items: center;
-    justify-content: center;
-     padding: 0 25px;
-`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 10px;
+  }
+`;
 
 export const Logo = styled.img`
-      height: 50px; // default height
-     max-height: 100%; // never exceed container
-   width: auto; // maintain aspect ratio
-`
+  height: 50px;
+  max-height: 100%;
+  width: auto;
+
+  @media (max-width: 768px) {
+    height: 40px;
+  }
+
+  @media (max-width: 480px) {
+    height: 32px;
+  }
+`;
 
 export const NavLinksContainer = styled.div`
-      width: 50%;
-     height: 100%;
-     display: flex;
-     align-items: center;
-     justify-content: flex-end;
-`
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+
+  /* Tablet */
+  @media (max-width: 768px) {
+    width: auto;
+    gap: 8px;
+  }
+
+  /* Phones */
+  @media (max-width: 480px) {
+    gap: 6px;
+  }
+`;
 
 export const NavLink = styled(Link)`
-        padding: 10px 15px;
-       cursor: pointer;
-`
-    
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 15px;
 
+  @media (max-width: 768px) {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
 
-// .navigation {
-//   height: 70px;
-//   width: 100%;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center; 
-//   margin-bottom: 25px;
-
-//   .logo-container {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     padding: 0 25px;
-//   }
-
-//   .logo {
-//     height: 50px; // default height
-//     max-height: 100%; // never exceed container
-//     width: auto; // maintain aspect ratio
-//   }
-
-//   .nav-links-container {
-//     width: 50%;
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-end;
-
-//     .nav-link {
-//       padding: 10px 15px;
-//       cursor: pointer;
-//     }
-//   }
-// }
-
-// /* Responsive adjustments */
-// @media (max-width: 768px) {
-//   .navigation {
-//     height: 60px;
-//     margin-bottom: 15px;
-
-//     .logo {
-//       height: 40px; // smaller on tablets/mobiles
-//     }
-
-//     .nav-links-container {
-//       width: auto; // allow links to shrink naturally
-//     }
-//   }
-// }
-
-// @media (max-width: 480px) {
-//   .navigation {
-//     height: 50px;
-//     margin-bottom: 10px;
-
-//     .logo {
-//       height: 35px; // small on phones
-//     }
-
-//     .nav-links-container {
-//       .nav-link {
-//         padding: 8px 10px;
-//       }
-//     }
-//   }
-// }
+  @media (max-width: 480px) {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+`;
