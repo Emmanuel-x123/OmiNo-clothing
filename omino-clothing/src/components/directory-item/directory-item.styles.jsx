@@ -9,7 +9,7 @@ export const BackgroundImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
 
-  background-image: ${({ imageUrl }) => `url(${imageUrl})`};
+background-image: ${({ $imageUrl }) => `url(${$imageUrl})`};
 
   transition: transform 0.6s ease;
 `;
