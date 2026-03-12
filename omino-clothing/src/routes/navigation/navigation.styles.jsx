@@ -12,7 +12,7 @@ export const NavigationContainer = styled.div`
   background: white;
   border-bottom: 1px solid #eee;
 
-  position: fixed; /* sticky on all screens */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -77,7 +77,7 @@ export const Hamburger = styled.div`
 export const SidebarContainer = styled.div`
   position: fixed;
   top: 0;
-  left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  left: ${({ $isOpen }) => ($isOpen ? "0" : "-100%")};
   width: 280px;
   height: 100vh;
   background: #fff;
@@ -86,7 +86,7 @@ export const SidebarContainer = styled.div`
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  padding: 70px 20px; /* leave space for navbar */
+  padding: 70px 20px;
   gap: 15px;
 `;
 

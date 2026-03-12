@@ -48,7 +48,7 @@ const Navigation = () => {
       </NavigationContainer>
 
       {/* Sidebar */}
-      <SidebarContainer isOpen={isSidebarOpen}>
+      <SidebarContainer $isOpen={isSidebarOpen}>
         <CloseButton onClick={toggleSidebar}>✕</CloseButton>
         <NavLink to='/shop' onClick={toggleSidebar}>SHOP</NavLink>
         {currentUser ? (
